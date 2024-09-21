@@ -47,13 +47,16 @@ const ConsultationForm: React.FC = () => {
     };
 
     try {
-      const response = await fetch("/add_consult", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "http://test-consult-api.std-2388.ist.mospolytech.ru/add_consult",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         },
-        body: JSON.stringify(data),
-      });
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok");

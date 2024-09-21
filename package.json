@@ -47,6 +47,5 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "prettier": "3.3.3"
-  },
-  "proxy": "http://test-consult-api.std-2388.ist.mospolytech.ru"
+  }
 }
