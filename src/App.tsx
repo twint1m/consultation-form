@@ -1,11 +1,12 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import {Outlet} from "react-router-dom";
+import Form from "./components/Form";
 
 function App() {
   return (
     <div className="App">
-      app
-      <Outlet />
+        <Form/>
+        <Outlet/>
     </div>
   );
 }
